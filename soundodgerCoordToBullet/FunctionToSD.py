@@ -30,7 +30,20 @@ def arena_to_coord(x, y, startOffset):
     linesToWrite.append(SDformat.format_CodeToAngle(startOffset, AngInDeg, 1))
     linesToWrite.append(SDformat.format_CodeToSize(startOffset, sizeBase))
     linesToWrite.append(SDformat.format_CodeToSDbullet(startOffset, 1, "normal", 0, "bubble", 1, "center", 0, 0, 0, 1, 1))
-    #linesToWrite.append(str(p1))
+
+#I did some math and to get the amount of spinrate per angle, if done in 0.25 seconds.
+#The equation would be S = (1/(2*t))(A/15)
+# A = angle you want to get to
+# S = spinrate required to get to0 said angle
+# t = amount of time (in seconds) to move to the angle
+
+#example: if you want to go 30 degrees in 0.25 seconds, you could:
+#S = 2(A/15)
+#S = 2 * 2
+#S = 4
+#Your spinrate would need to be at 4
+
+
 
 for line in linesToWrite:
     f.write(line)
