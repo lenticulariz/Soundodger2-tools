@@ -34,7 +34,7 @@ def arena_to_coord(x, y, startOffset):
 #I did some math and to get the amount of spinrate per angle,
 #The equation would be S = (1/(2*t))(A/15)
 # A = angle you want to get to
-# S = spinrate required to get to0 said angle
+# S = spinrate required to get to said angle
 # t = amount of time (in seconds) to move to the angle
 
 #example: if you want to go 30 degrees in 0.25 seconds, you could:
