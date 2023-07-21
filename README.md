@@ -15,7 +15,7 @@ startOffset is the time that it spawns the bullet
 0, 0 is the center of the screen
 
 # DomePatternCreator
-This file creates domes in a specific pattern for you
+This file creates domes in a specific pattern for you \
 The shapes include: \
 -circle \
 -square \
