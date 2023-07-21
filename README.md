@@ -1,3 +1,5 @@
+**For the files to work you will also need to download writeIn.txt and SDformat.py, put them all in the same folder.**
+
 # Soundplotter
 This file transfers a set of coordinates into a bullet with a specific location on soundodger 2
 
