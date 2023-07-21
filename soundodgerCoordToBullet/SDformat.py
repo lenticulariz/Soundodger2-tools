@@ -24,6 +24,18 @@ def format_CodeToSize(time, size):
 
     print(s)
     return s
+
+def format_CodeToDome(time, type, sizeStart, sizeEnd, duration, posX, posY, layer):
+    s = f'<Dome time="{time}" type="{type}" size="{sizeStart},{sizeEnd}" dur="{duration}" place="coord" pos="{posX},{posY}" lyr="{layer}" />'
+
+    print(s)
+    return s
+
+def format_CodeToSpinrate(time, spinRate):
+    s = f'<Event type="spin" time="{time}" val="{spinRate}" />'
+
+    print(s)
+    return s
 #--format_CodeToSDbullet possibles:
 #time: 0-len(song)
 #enemy: 0-amountOfEnemies
@@ -38,6 +50,4 @@ def format_CodeToSize(time, size):
 #amount: any number
 #layer 1-9
 
-def format_CodeToEvent(eventType, time, value):
-    s = f'<Event type="{eventType}" time="{time}" val="{value}" />'
-    return s
+#<Event type="spin" time="1.683" val="1" />
