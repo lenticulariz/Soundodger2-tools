@@ -14,3 +14,12 @@ Then when ran the script will output the xml data into writeIn.txt, where you ca
 startOffset is the time that it spawns the bullet
 0, 0 is the center of the screen
 
+# DomePatternCreator
+This file creates domes in a specific pattern for you
+The shapes include:
+-circle
+-square
+-parametric equation (preset)
+-parametric equation animation (preset)
+
+When running the file it will output the xml lines into writeIn.txt, which you can then paste into your xml file
