@@ -1,0 +1,7 @@
+SPIRAL:
+for n in range(40):
+    arena_to_coord(10 * (n * math.cos(n/4)), 10 * (n * math.sin(n/4)), 1 + (n/10))
+
+CIRCLE:
+for n in range(40):
+    arena_to_coord(500 * math.cos(n), 500 * math.sin(n), 1 + (n/10))
