@@ -25,6 +25,16 @@ def domeRectangle(time, type, sizeStart, sizeEnd, duration, layer, offsetX, offs
         #right side
         linesToWrite.append(SDformat.format_CodeToDome(time, type, sizeStart, sizeEnd, duration, offsetX + (width * (domeAmount/2)), offsetY + ((dome - (domeAmount/2)) * height), layer))
 
+def domeLine(time, type, sizeStart, sizeEnd, duration, layer, offsetX, offsetY, Length, angle, domeAmount):
+    #angle is in radians
+    for dome in range(domeAmount):
+        #top side
+        linesToWrite.append(SDformat.format_CodeToDome(time, type, sizeStart, sizeEnd, duration, 
+                                                       offsetX + (math.cos(angle)*dome*(Length/(domeAmount-1))), 
+                                                       offsetY + (dome * (Length/(domeAmount-1))) * (math.sin(angle)), 
+                                                       layer))
+
+
 def domePendulum(time, type, sizeStart, sizeEnd, simSpeed, layer, offsetX, offsetY, pendulumLength, pendulumVelocity, animationLength):
     g = 9.8
     T = (2 * math.pi) * math.sqrt(pendulumLength/g)
