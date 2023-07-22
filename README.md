@@ -19,6 +19,7 @@ This file creates domes in a specific pattern for you \
 The shapes include: \
 -circle \
 -square \
+-line \
 -pendulum \
 -parametric equation (preset) \
 -parametric equation animation (preset)
