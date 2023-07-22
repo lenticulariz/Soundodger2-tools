@@ -2,7 +2,7 @@
 Python can be downloaded at https://www.python.org/
 
 # DomePatternCreator
-To run just run the 'runDomeCreator.bat' file, which uses the command prompt to start it (for some reason it wont run properly without it) \
+To run just run the 'runDomeCreator.bat' file, which uses the command prompt to start it (for some reason it wont run properly without it)
 
 This file creates domes in a specific pattern for you \
 The shapes include: \
